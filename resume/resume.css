@@ -273,49 +273,39 @@ footer .cv-pdf i:hover {
 
 .timeline-item {
     padding: 4em 2em 0em 2em;
-    position: relative;
-    color: #fafafa;
-    border-left: 1px solid;
+    position:relative;
+    color:#fafafa;
+    border-left:1px solid;
 }
 
 .timeline-item p {
-    padding: 0;
-    margin: 0;
+    padding:0;
+    margin:0;
 }
 
-.timeline-item::before {
-    content: attr(dates);
-    position: absolute;
-    left: 2.5em;
-    /* font-weight: bold;*/
-    top: 3em;
-    display: block;
-    font-family: 'Exo', sans-serif;
-    font-weight: 500;
-    font-size: .8em;
-    padding: 0;
-    margin: 0;
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absoloute;
+    left:2.5em;
+    top: 3.5em;
+    display:block;
+    font-family:"Exo", sans-serif;
+    font-weight:500;
+    font-size :0.8em;
+    padding:0;
+    margin:0;
 }
 
-.timeline-item::after {
+.timeline-item:after {
     width: 12px;
     height: 12px;
     display: block;
-    top: 2.4em;
     position: absolute;
+    top:2.4em;
     left: -6px;
-    border-radius: 12px;
-    content: '';
+    border-radius: 6px;
+    content: ;
     background: #fafafa;
-}
-
-.timeline-item h4:hover {
-    color: #aaaaaa;
-    transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -webkit-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out
 }
 
 /*work*/
